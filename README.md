@@ -23,7 +23,7 @@ PrimingAmountAmount of priming sugar used
 
 The data can be found [here][https://www.kaggle.com/jtrofe/beer-recipes/downloads/beer-recipes.zip/3].
 
-### Exploratory Data Analysis 
+## Exploratory Data Analysis 
 (Clean data and visualize data. Note interesting features in the data. Reduce number of types and explain process for reduction)
 
 

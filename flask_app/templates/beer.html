@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div>
+    <center>
+        <body> 
+        <h3>Brewing cold ones can be a delicate craft. 
+        <br> Input your recipe to find which kind of beer you are making. 
+        </h3>
+        </body>
+    </center>
+    </div>
+    <div>
+        <center>
+        <form method="POST" action"">
+            {{ form.hidden_tag() }}
+                <div class="form-group">
+                    {{ form.abv.label()}}
+                    {{ form.abv(class="form-control form-control-lg")}}
+                </div>
+                <div class="form-group">
+                    {{ form.ibu.label()}}
+                    {{ form.ibu(class="form-control form-control-lg")}}
+                </div>
+                <div class="form-group">
+                    {{ form.color.label()}}
+                    {{ form.color(class="form-control form-control-lg")}}
+                </div>
+                <div class="form-group">
+                    {{ form.boil_size.label()}}
+                    {{ form.boil_size(class="form-control form-control-lg")}}
+                </div>
+                <div class="form-group">
+                    {{ form.boil_time.label()}}
+                    {{ form.boil_time(class="form-control form-control-lg")}}
+                </div>
+                <div class="form-group">
+                    {{ form.boil_gravity.label()}}
+                    {{ form.boil_gravity(class="form-control form-control-lg")}}
+                </div>
+                <div class="form-group">
+                    {{ form.efficiency.label()}}
+                    {{ form.efficiency(class="form-control form-control-lg")}}
+                </div>
+                <div class="form-group">
+                    {{ form.wort_change.label()}}
+                    {{ form.wort_change(class="form-control form-control-lg")}}
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Tell me my beer type!">
+                </div>
+        </center>
+        </div>
+        </form>
+
+    <p>
+    <center>
+    <font size=4>
+        Your beer type is: 
+        <br> {{ prediction }}
+    </font>
+    </center>
+    </div>
+</p>
+</center>
+
+{% endblock content %}
